@@ -32,7 +32,118 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.banner-card {
+  height: 70vh;
+  width: 100vw;
+  color: white;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  position: relative;
+}
+
+
+.banner-img {
+  width: 100vw;
+  height: 70vh;
+}
+
+.banner-title {
+  position: absolute;
+  top: 45vh;
+  left: 5vw;
+}
+
+.banner-text {
+  position: absolute;
+  top: 55vh;
+  left: 5vw;
+  height: 4.5rem;
+  margin-right: 5rem;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width:400px) {
+  .banner-card {
+    height: 30vh;
+  }
+
+  .banner-img {
+    height: 30vh;
+  }
+
+  .banner-title {
+    top: 12vh;
+    left: 5vw;
+  }
+
+  .banner-text {
+    top: 17vh;
+    left: 5vw;
+  }
+
+  .movie-card {
+    width: 40vw;
+    margin: 0.1rem;
+  }
+
+  .movie-button {
+    width: 80%;
+    font-size: smaller;
+  }
+
+  .movie-img {
+    width: 40vw;
+  }
+}
+
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+}
+
+
+.movie-card {
+  width: 20vw;
+  margin: 1rem;
+  color: white;
+  position: relative;
+}
+
+.movie-img {
+  height: 40vh;
+  width: 20vw;
+}
+
+.movie-title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+
+.movie-button {
+  position: absolute;
+  bottom: 2rem;
+}
+
+
+.favourite-genre {
+  padding: 3rem;
+}
+
+
+.favourite-table {
+  padding: 3rem;
+  overflow: auto;
 }
